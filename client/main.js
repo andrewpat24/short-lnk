@@ -12,11 +12,13 @@ import Login from '../imports/ui/Login';
 // Create and import basic version of Login
 // Create the route for "/" and render Login
 
+window.browserHistory = browserHistory;
+
 const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={Login}/>
     <Route path="/signup" component={Signup}/>
-    <Route path="/link" component={Link}/>
+    <Route path="/links" component={Link}/>
     <Route path="*" component={NotFound}/>
   </Router>
 );
